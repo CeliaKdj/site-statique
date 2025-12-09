@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klivio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    <span>Bonjour</span>
+
+  <header>
+
+    <nav id="nav-bar">
+
+      <div id="barre-navigation-1">
+        <ul id="ul-nav-1">
+          <li><a href="#"><img src="./images/logo.png" alt="Logo Klivio"></a></li>
+          <li><a href="#">Les formations</a></li>
+          <li>
+            <input type="search" id="icone-loupe" placeholder="Rechercher" aria-label="Rechercher formations">
+          </li>
+        </ul>
+      </div>
+
+      <div id="barre-navigation-2">
+        <button id="bouton-connexion">Connexion</button>
+        <button id="bouton-inscription">Inscription</button>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1 id="slogan-klivio">Klivio, l’allié de votre progression</h1>
+      <h2 id="infos-klivio">Les meilleures formations sur le développement personnel</h2>
+      <button id="bouton-savoir-plus">En savoir plus</button>
+    </section>
+  </main>
+
+  <section id="contenu">
+    <div id="container-formation-populaires">
+      <h3>Les formations populaires</h3>
+      <div id="container-cards-formations">
+
+        <div class="cards" id="card-formation-pop-1">
+          <img class="course-img" src="images/img-course.png" alt="">
+          <h5>Parler en public</h3>
+            <p>Sonia Lefevre | Coach en prise de parole</p>
+            <img class="etoiles" src="./images/note-5.png" alt="logo 5 étoiles">
+            <p>Gagnez en aisance et captez votre auditoire</p>
+        </div>
+
+        <div class="cards" id="card-formation-pop-2">
+          <img class="course-img" src="images/img-course.png" alt="">
+          <h5>Gérer le stress</h3>
+            <p>Lucie Garnier | Formatrice</p>
+            <img class="etoiles" src="./images/note-5.png" alt="">
+            <p>Apprenez à rester serein face aux défis</p>
+        </div>
+
+        <div class="cards" id="card-formation-pop-3">
+          <img class="course-img" src="images/img-course.png" alt="">
+          <h5>Travailler en équipe</h3>
+            <p>David Moreau | Expert</p>
+            <img class="etoiles" src="./images/note-5.png" alt="">
+            <p>Collaborez efficacement, même à distance</p>
+        </div>
+
+        <div class="cards" id="card-formation-pop-4">
+          <img class="course-img" src="images/img-course.png" alt="">
+          <h5>Gérer son temps</h3>
+            <p>Claire Dumas | Coach organisation</p>
+            <img class="etoiles" src="./images/note-5.png" alt="">
+            <p>Optimisez vos journées et gagnez en efficacité</p>
+        </div>
+
+      </div>
+
+      <button id="plus-dinfo-formations">Voir plus de formations</button>
+
+    </div>
+  </section>
 </body>
+
 </html>
