@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* BARRE DE NAVIGATION */
+#nav-bar {
+  width: 100%;
+  height: 80px;
+  background-color: #152237;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0 5rem; */
+}
+
+#ul-nav-1 {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* align-content: space-between; */
+  list-style: none;
+  gap: 10rem;
+}
+
+#barre-navigation-1 li,
+#barre-navigation-2 li {
+  list-style-type: none;
+}
+
+#barre-navigation-1 a,
+#barre-navigation-2 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+#barre-navigation-1 img {
+  width: 84px;
+  height: 31px;
+}
+
+#barre-navigation-1 input {
+  width: 477px;
+  height: 40px;
+  border-width: 1px;
+  border-radius: 6px;
+  border: 1px;
+  font-family: "Montserrat", sans-serif;
+  background: #152237;
+  border: 1px solid #ffffff;
+  background-image: url("../images/Icon.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 22.06px 24px;
+  padding: 0.6rem 1rem;
+}
+
+#barre-navigation-1 input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  color: #ffffff;
+}
+
+#barre-navigation-2 button {
+  margin: 0.5rem;
+}
+
+#bouton-inscription {
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  background: linear-gradient(95.98deg, #44dd8a 8.7%, #15b7e2 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+#bouton-connexion {
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+/* SECTION HERO */
+main {
+  width: 100%;
+  min-height: 451px;
+  background-image: url(../images/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero {
+  background: linear-gradient(
+    94.01deg,
+    rgba(68, 221, 138, 0.8) 3.11%,
+    rgba(21, 183, 226, 0.8) 98.45%
+  );
+  width: 100%;
+  min-height: 451px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#slogan-klivio {
+  width: auto;
+  height: 59px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+#infos-klivio {
+  width: auto;
+  height: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+#bouton-savoir-plus {
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+/* FORMATIONS POPULAIRES */
+#contenu {
+  width: 100%;
+  height: 632px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-formation-populaires {
+  width: 80%;
+  height: 632px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container-formation-populaires h3 {
+  width: 100%;
+  height: 72px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 72px;
+  letter-spacing: -1.5%;
+  margin-top: 20px;
+}
+
+#contenu h5,
+#contenu-2 h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -1.5%;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+#container-cards-formations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 120px;
+  align-self: center;
+}
+
+.cards p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-left: 5px;
+  color: #152237;
+}
+
+.non-barré {
+  color: #ffffff;
+}
+
+.course-img {
+  width: 305px;
+  height: 206px;
+}
+
+.cards {
+  width: 305px;
+  height: 362px;
+  position: relative;
+}
+
+.etoiles {
+  width: 116px;
+  height: 19px;
+  margin: 5px;
+}
+
+#plus-dinfo-formations {
+  width: 225px;
+  height: 40px;
+  background: #152237;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  align-self: center;
+}
+
+#prix-card-1 {
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: 170px;
+  width: 120px;
+  height: 31.583885192871094px;
+  opacity: 1;
+  border-radius: 93px;
+  background: #152237;
+  box-shadow: 5px 4px 13.2px -1px #00000040;
+  display: flex;
+  flex-direction: row;
+}
+
+.prix-cards p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1.5%;
+  color: #ffffff;
+  padding: 5px 0 0 5px;
+}
+
+.prix-cards s {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 7px;
+  letter-spacing: -1.5%;
+  color: #ffffff;
+  padding: 12px 0 0 10px;
+}
+
+/* FORMATIONS RECENTES */
+#contenu-2 {
+  width: 100%;
+  height: 632px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #152237;
+}
+
+#contenu-2 h3 {
+  width: 486px;
+  height: 72px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 72px;
+  letter-spacing: -1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contenu-2 button {
+  width: 225px;
+  height: 40px;
+  background: #152237;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  border-radius: 6px;
+  color: #152237;
+  background-color: #ffffff;
+}
+
+.cards-2 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+#prix-card-2 {
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: 170px;
+  width: 120px;
+  height: 31.583885192871094px;
+  opacity: 1;
+  border-radius: 93px;
+  background: #ffffff;
+  box-shadow: 5px 4px 13.2px -1px #00000040;
+  display: flex;
+  flex-direction: row;
+}
+.prix-cards-2 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1.5%;
+  color: #152237;
+  background: #ffffff;
+  padding: 5px 0 0 5px;
+  border-radius: 93px;
+}
+
+.prix-cards-2 s {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 10px;
+  line-height: 7px;
+  letter-spacing: -1.5%;
+  color: #152237;
+  background: #ffffff;
+  padding: 12px 0 0 10px;
+  border-radius: 93px;
+}
+
+.cards-2 {
+  width: 305px;
+  height: 362px;
+  position: relative;
+}
+
+#contenu-2 h5 {
+  color: #ffffff;
+}
+
+#contenu-2 h3 {
+  color: #ffffff;
+}
+
+/* AVIS CLIENTS */
+
+#avis-client {
+  width: 100%;
+  height: 597px;
+}
+
+#avis-client h3 {
+  width: 289px;
+  height: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: -1.5%;
+  text-transform: uppercase;
+  color: #152237;
+  margin-top: 58px;
+  margin-bottom: 66px;
+}
+
+.avis {
+  width: 689px;
+  height: 306px;
+}
+
+#avis-1 {
+  padding-right: 12px;
+}
+
+#avis-2 {
+  padding-left: 12px;
+}
+
+.avis h5 {
+  width: 686px;
+  height: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -1.5%;
+  padding-bottom: 7px;
+}
+
+.avis p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -1.5%;
+}
+
+.photo-client {
+  border-radius: 50%;
+}
+
+#container-avis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+}
+
+#display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.etoiles-avis {
+  margin-bottom: 13.8px;
+}
+
+/* LES AVANTAGES KLIVIO */
+#container-avantages {
+  width: 100%;
+  height: 641px;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 71px;
+ 
+}
+
+#les-avantages h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: -1.5%;
+  text-transform: uppercase;
+  color: #152237;
+  margin-bottom: 43px;
+}
+
+#les-avantages ul {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.5%;
+  list-style-type: none;
+  padding-right: 30px;
+}
+#les-avantages li {
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.5%;
+  color: #152237;
+  margin-bottom: 24px;
+  padding-left: 65px;
+  position: relative;
+}
+#les-avantages li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 32px;
+  
+}
+
+.logo-avantage-1::before {
+  background-image: url("../images/arrow-up-right.svg");
+
+}
+
+.logo-avantage-2::before {
+  background-image: url("../images/edit-01.svg");
+}
+
+.logo-avantage-3::before {
+  background-image: url("../images/telecharger.svg");
+}
+
+.logo-avantage-4::before {
+  background-image: url("../images/star-02.svg");
+}
+
+.logo-avantage-5::before {
+  background-image: url("../images/horloge.svg");
+}
+
+.logo-avantage-6::before {
+  background-image: url("../images/bulle.svg");
+}
+
+#container-avantages img {
+  width: 727px;
+  height: 472px;
+}
+
+/* CREEZ FORMATION */
+
+#container-creez-formation {
+  width: 100%;
+  height: 641px;
+  background: #44dd8a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 71px;
+}
+
+#container-creez-formation img {
+  width: 729px;
+  height: 487px;
+
+}
+
+/* A PROPOS */
+#container-a-propos {
+  width: 100%;
+  height: 740px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+#a-propos {
+  /* width: 50vw;
+  height: 740px; */
+  width: 686px;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+#a-propos h3 {
+  align-items: flex-end;
+}
+
+#background-logo {
+  width: 50vw;
+  height: 740px;
+  background: #152237;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#background-logo img {
+  width: 430px;
+  height: 155px;
+}

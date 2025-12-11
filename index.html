@@ -1,238 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+  <body>
+    <!-- BARRE DE NAVIGATION -->
+    <header>
+      <nav id="nav-bar">
+        <div id="barre-navigation-1">
+          <ul id="ul-nav-1">
+            <li>
+              <a href="#"><img src="./images/logo.png" alt="Logo Klivio" /></a>
+            </li>
+            <li><a href="#">Les formations</a></li>
+            <li>
+              <input
+                type="search"
+                id="icone-loupe"
+                placeholder="Rechercher"
+                aria-label="Rechercher formations"
+              />
+            </li>
+          </ul>
+        </div>
 
-<body>
+        <div id="barre-navigation-2">
+          <button id="bouton-connexion">Connexion</button>
+          <button id="bouton-inscription">Inscription</button>
+        </div>
+      </nav>
+    </header>
 
-  <header>
+    <!-- SECTION HERO -->
 
-    <nav id="nav-bar">
+    <main>
+      <section id="hero">
+        <h1 id="slogan-klivio">Klivio, l’allié de votre progression</h1>
+        <h2 id="infos-klivio">
+          Les meilleures formations sur le développement personnel
+        </h2>
+        <button id="bouton-savoir-plus">En savoir plus</button>
+      </section>
+    </main>
 
-      <div id="barre-navigation-1">
-        <ul id="ul-nav-1">
-          <li><a href="#"><img src="./images/logo.png" alt="Logo Klivio"></a></li>
-          <li><a href="#">Les formations</a></li>
-          <li>
-            <input type="search" id="icone-loupe" placeholder="Rechercher" aria-label="Rechercher formations">
+    <!-- SECTION FORMATIONS POPULAIRES -->
+
+    <section id="contenu">
+      <div id="container-formation-populaires">
+        <h3>Les formations populaires</h3>
+
+        <div id="container-cards-formations">
+          <div class="cards" id="card-formation-pop-1">
+            <div id="prix-card-1" class="prix-cards">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+            <img class="course-img" src="images/img-course.png" alt="" />
+
+            <h5>Parler en public</h5>
+            <p>Sonia Lefevre | Coach en prise de parole</p>
+            <img
+              class="etoiles"
+              src="./images/note-5.png"
+              alt="logo 5 étoiles"
+            />
+            <p>Gagnez en aisance et captez votre auditoire</p>
+          </div>
+
+          <div class="cards" id="card-formation-pop-2">
+            <div id="prix-card-1" class="prix-cards">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+            <img class="course-img" src="images/img-course.png" alt="" />
+            <h5>Gérer le stress</h5>
+            <p>Lucie Garnier | Formatrice</p>
+            <img class="etoiles" src="./images/note-4.svg" alt="" />
+            <p>Apprenez à rester serein face aux défis</p>
+          </div>
+
+          <div class="cards" id="card-formation-pop-3">
+            <div id="prix-card-1" class="prix-cards">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+
+            <img class="course-img" src="images/img-course.png" alt="" />
+            <h5>Travailler en équipe</h5>
+            <p>David Moreau | Expert</p>
+            <img class="etoiles" src="./images/note-5.png" alt="" />
+            <p>Collaborez efficacement, même à distance</p>
+          </div>
+
+          <div class="cards" id="card-formation-pop-4">
+            <div id="prix-card-1" class="prix-cards">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+
+            <img class="course-img" src="images/img-course.png" alt="" />
+            <h5>Gérer son temps</h5>
+            <p>Claire Dumas | Coach organisation</p>
+            <img class="etoiles" src="./images/note-4.svg" alt="" />
+            <p>Optimisez vos journées et gagnez en efficacité</p>
+          </div>
+        </div>
+
+        <button id="plus-dinfo-formations">Voir plus de formations</button>
+      </div>
+    </section>
+
+    <!-- SECTION FORMATION RECENTES -->
+
+    <section id="contenu-2">
+      <div id="container-formation-populaires">
+        <h3>Les formations récentes</h3>
+
+        <div id="container-cards-formations">
+          <div class="cards-2" id="card-formation-pop-1">
+            <div id="prix-card-2" class="prix-cards-2">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+            <img
+              class="course-img"
+              src="images/img-course.png"
+              alt="image formation"
+            />
+            <h5>Parler en public</h5>
+            <p>Sonia Lefevre | Coach en prise de parole</p>
+            <img
+              class="etoiles"
+              src="./images/note-5.png"
+              alt="logo 5 étoiles"
+            />
+            <p>Gagnez en aisance et captez votre auditoire</p>
+          </div>
+
+          <div class="cards-2" id="card-formation-pop-2">
+            <div id="prix-card-2" class="prix-cards-2">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+            <img
+              class="course-img"
+              src="images/img-course.png"
+              alt="image formation"
+            />
+            <h5>Gérer le stress</h5>
+            <p>Lucie Garnier | Formatrice</p>
+            <img
+              class="etoiles"
+              src="./images/note-5.png"
+              alt="logo 5 étoiles"
+            />
+            <p>Apprenez à rester serein face aux défis</p>
+          </div>
+
+          <div class="cards-2" id="card-formation-pop-3">
+            <div id="prix-card-2" class="prix-cards-2">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+            <img
+              class="course-img"
+              src="images/img-course.png"
+              alt="image formation"
+            />
+            <h5>Travailler en équipe</h5>
+            <p>David Moreau | Expert</p>
+            <img
+              class="etoiles"
+              src="./images/note-4.svg"
+              alt="logo 4 étoiles"
+            />
+            <p>Collaborez efficacement, même à distance</p>
+          </div>
+
+          <div class="cards-2" id="card-formation-pop-4">
+            <div id="prix-card-2" class="prix-cards-2">
+              <p class="non-barré">15.99 €</p>
+              <s>60 €</s>
+            </div>
+            <img
+              class="course-img"
+              src="images/img-course.png"
+              alt="image formation"
+            />
+            <h5>Gérer son temps</h5>
+            <p>Claire Dumas | Coach organisation</p>
+            <img
+              class="etoiles"
+              src="./images/note-4.svg"
+              alt="logo 4 étoiles"
+            />
+            <p>Optimisez vos journées et gagnez en efficacité</p>
+          </div>
+        </div>
+
+        <button>Voir plus de formations</button>
+      </div>
+    </section>
+
+    <!-- SECTION AVIS CLIENTS -->
+
+    <section id="avis-client">
+      <div id="container-avis">
+        <h3>Avis clients</h3>
+        <div id="display">
+          <div id="avis-1" class="avis">
+            <img
+              class="photo-client"
+              src="./images/juliette.png"
+              alt="photo du client"
+            />
+            <h5>Juliette</h5>
+            <img
+              class="etoiles-avis"
+              src="./images/note-5.png"
+              alt="noté 5 étoiles"
+            />
+            <p>
+              J’ai trouvé le parcours très bien structuré : vidéos courtes,
+              quizzes pertinents et projets pratiques qui m’ont permis
+              d’appliquer immédiatement les notions. L’interface est claire et
+              la progression est motivante — parfait pour se former en
+              autonomie.
+            </p>
+          </div>
+          <div id="avis-2" class="avis">
+            <img
+              class="photo-client"
+              src="./images/camille.png"
+              alt="photo du client"
+            />
+            <h5>Camille</h5>
+            <img
+              class="etoiles-avis"
+              src="./images/note-5.png"
+              alt="noté 5 étoiles"
+            />
+            <p>
+              Bon équilibre entre théorie et pratique. Les chapitres sont
+              détaillés, et le support et les corrections automatiques ont
+              vraiment aidé. Idéal pour démarrer et progresser rapidement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION AVANTAGES -->
+
+    <section id="container-avantages">
+      <div id="les-avantages">
+        <h3>Les avantages Klivio</h3>
+        <ul>
+          <li class="logo-avantage-1">Suivi de sa progression</li>
+          <li class="logo-avantage-2">
+            Exercices et QCM pour la mise en pratique
+          </li>
+          <li class="logo-avantage-3">
+            Possibilité de télécharger/imprimer les formations
+          </li>
+          <li class="logo-avantage-4">Contenu qualitatif et vérifié</li>
+          <li class="logo-avantage-5">Suivi en autonomie, 24h/24, 7j/7</li>
+          <li class="logo-avantage-6">
+            Espaces d’échanges dédiés pour poser ses questions <br />
+            sur les formations
           </li>
         </ul>
       </div>
-
-      <div id="barre-navigation-2">
-        <button id="bouton-connexion">Connexion</button>
-        <button id="bouton-inscription">Inscription</button>
-      </div>
-
-    </nav>
-
-  </header>
-
-  <main>
-    <section id="hero">
-      <h1 id="slogan-klivio">Klivio, l’allié de votre progression</h1>
-      <h2 id="infos-klivio">Les meilleures formations sur le développement personnel</h2>
-      <button id="bouton-savoir-plus">En savoir plus</button>
+      <img src="./images/avantages.png" alt="" />
     </section>
-  </main>
 
-  <section id="contenu">
+    <!-- SECTION CREEZ FORMATIONS -->
 
-    <div id="container-formation-populaires">
-      <h3>Les formations populaires</h3>
+    <section id="container-creez-formation">
+      <img src="./images/julia-cameron.jpg" alt="" />
+      <div id="creez-formation">
+        <h3>Créez vos formations avec Klivio</h3>
+        <ul>
+          <li class="logo-creez-1">
+            Commission unique, au pourcentage sur les ventes
+          </li>
+          <li class="logo-creez-2">Mise en avant sur la plateforme</li>
+          <li class="logo-creez-3">
+            Contrôle total sur le cours : contenu, prix
+          </li>
+          <li class="logo-creez-4">Contenu qualitatif et vérifié</li>
+          <li class="logo-creez-5">
+            Fonctionnalités avancées : espace commentaires,<br />
+            possibilité de créer des QCM, exercices, vidéos,<br />
+            téléchargement en PDF, suivi des statistiques des <br />
+            ventes, gestion de codes promos, gestion de la facturation, etc
+          </li>
+          <li class="logo-creez-6">
+            Le professeur reste 100% propriétaire de sa formation et conserve
+            tous ses droits d’auteur
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <div id="container-cards-formations">
+    <!-- SECTION A PROPOS -->
 
-        <div class="cards" id="card-formation-pop-1">
-         
-            <div  id="prix-card-1" class="prix-cards">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-          <img class="course-img" src="images/img-course.png" alt="">
-         
-          <h5>Parler en public</h3>
-            <p>Sonia Lefevre | Coach en prise de parole</p>
-            <img class="etoiles" src="./images/note-5.png" alt="logo 5 étoiles">
-            <p>Gagnez en aisance et captez votre auditoire</p>
-        </div>
-
-        <div class="cards" id="card-formation-pop-2">
-          <div  id="prix-card-1"  class="prix-cards">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-          <img class="course-img" src="images/img-course.png" alt="">
-          <h5>Gérer le stress</h3>
-            <p>Lucie Garnier | Formatrice</p>
-            <img class="etoiles" src="./images/note-4.svg" alt="">
-            <p>Apprenez à rester serein face aux défis</p>
-        </div>
-
-        <div class="cards" id="card-formation-pop-3">
-          <div  id="prix-card-1"  class="prix-cards">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
+    <section id="container-a-propos">
+      <div id="a-propos">
+        <h3>À propos de Klivio</h3>
+        <p>
+          Chez Klivio, nous défendons des valeurs fondamentales qui définissent
+          notre approche éducative. Nous nous engageons à assurer une
+          rémunération équitable pour les créateurs de contenu, reconnaissant la
+          qualité de leur travail. <br />
+          <br />
+          Favorisant l'autonomie d'apprentissage, notre plateforme offre la
+          flexibilité écessaire pour explorer divers sujets. La transparence est
+          au cœur de notre démarche, garantissant une clarté totale sur les
+          formations que les instructeurs proposent. Ensemble, ces valeurs
+          forment le socle d'une ducation enrichissante et équitable, guidant
+          notre mission d'offrir des pportunités d'apprentissage de qualité
+        </p>
       </div>
 
-          <img class="course-img" src="images/img-course.png" alt="">
-          <h5>Travailler en équipe</h3>
-            <p>David Moreau | Expert</p>
-            <img class="etoiles" src="./images/note-5.png" alt="">
-            <p>Collaborez efficacement, même à distance</p>
-        </div>
-
-        <div class="cards" id="card-formation-pop-4">
-          <div  id="prix-card-1"  class="prix-cards">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-
-          <img class="course-img" src="images/img-course.png" alt="">
-          <h5>Gérer son temps</h3>
-            <p>Claire Dumas | Coach organisation</p>
-            <img class="etoiles" src="./images/note-4.svg" alt="">
-            <p>Optimisez vos journées et gagnez en efficacité</p>
-        </div>
-
+      <div id="background-logo">
+        <img src="./images/logo.png" alt="" />
       </div>
-
-      <button id="plus-dinfo-formations">Voir plus de formations</button>
-
-    </div>
-  </section>
-
-  <section id="contenu-2">
-    <div id="container-formation-populaires">
-
-      <h3>Les formations récentes</h3>
-
-      <div id="container-cards-formations">
-
-        <div class="cards-2" id="card-formation-pop-1">
-          <div  id="prix-card-2"  class="prix-cards-2">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-          <img class="course-img" src="images/img-course.png" alt="image formation">
-          <h5>Parler en public</h3>
-              <p>Sonia Lefevre | Coach en prise de parole</p>
-              <img class="etoiles" src="./images/note-5.png" alt="logo 5 étoiles">
-              <p>Gagnez en aisance et captez votre auditoire</p>
-        </div>
-
-        <div class="cards-2" id="card-formation-pop-2">
-          <div id="prix-card-2"  class="prix-cards-2">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-          <img class="course-img" src="images/img-course.png" alt="image formation">
-          <h5>Gérer le stress</h3>
-            <p>Lucie Garnier | Formatrice</p>
-            <img class="etoiles" src="./images/note-5.png" alt="logo 5 étoiles">
-            <p>Apprenez à rester serein face aux défis</p>
-        </div>
-
-        <div class="cards-2" id="card-formation-pop-3">
-          <div  id="prix-card-2"  class="prix-cards-2">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-          <img class="course-img" src="images/img-course.png" alt="image formation">
-          <h5>Travailler en équipe</h3>
-            <p>David Moreau | Expert</p>
-            <img class="etoiles" src="./images/note-4.svg" alt="logo 4 étoiles">
-            <p>Collaborez efficacement, même à distance</p>
-        </div>
-
-        <div class="cards-2" id="card-formation-pop-4">
-          <div  id="prix-card-2"  class="prix-cards-2">
-              <p class="non-barré">15.99 €</p>
-              <s>60 €</s>
-            </div>
-          <img class="course-img" src="images/img-course.png" alt="image formation">
-          <h5>Gérer son temps</h3>
-            <p>Claire Dumas | Coach organisation</p>
-            <img class="etoiles" src="./images/note-4.svg" alt="logo 4 étoiles">
-            <p>Optimisez vos journées et gagnez en efficacité</p>
-        </div>
-
-      </div>
-
-      <button>Voir plus de formations</button>
-
-    </div>
-  </section>
-
-  <section id="avis-client">
-
-    <div id="container-avis">
-
-      <h3>Avis clients</h3>
-      <div id="display">
-
-        <div id="avis-1" class="avis">
-          <img class="photo-client" src="./images/juliette.png" alt="photo du client">
-          <h5>Juliette</h5>
-          <img class="etoiles-avis" src="./images/note-5.png" alt="noté 5 étoiles">
-          <p>J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui
-            m’ont permis d’appliquer immédiatement les notions. L’interface est claire et la progression est motivante —
-            parfait pour se former en autonomie.</p>
-        </div>
-        <div id="avis-2" class="avis">
-          <img class="photo-client" src="./images/camille.png" alt="photo du client">
-          <h5>Camille</h5>
-          <img class="etoiles-avis" src="./images/note-5.png" alt="noté 5 étoiles">
-          <p>Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections
-            automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
-        </div>
-
-
-      </div>
-
-  </section>
-
-
-  <section id="container-avantages">
-    <div id="les-avantages">
-      <h3>Les avantages Klivio</h3>
-      <ul>
-        <li class="logo-avantage-1">Suivi de sa progression</li>
-        <li class="logo-avantage-2">Exercices et QCM pour la mise en pratique</li>
-        <li class="logo-avantage-3">Possibilité de télécharger/imprimer les formations</li>
-        <li class="logo-avantage-4">Contenu qualitatif et vérifié</li>
-        <li class="logo-avantage-5">Suivi en autonomie, 24h/24, 7j/7</li>
-        <li class="logo-avantage-6">Espaces d’échanges dédiés pour poser ses questions <br> sur les formations</li>
-      </ul>
-    </div>
-    <img src="./images/avantages.png" alt="">
-  </section>
-   
-
-  <section id="container-creez-formation">
-     <img src="./images/julia-cameron.jpg" alt="">
-   <div id="creez-formation">
-
-   <h3>Créez vos formations avec Klivio</h3>
-      <ul>
-        <li class="logo-creez-1">Commission unique, au pourcentage sur les ventes</li>
-        <li class="logo-creez-2">Mise en avant sur la plateforme</li>
-        <li class="logo-creez-3">Contrôle total sur le cours : contenu, prix</li>
-        <li class="logo-creez-4">Contenu qualitatif et vérifié</li>
-        <li class="logo-creez-5">Fonctionnalités avancées : espace commentaires,<br> possibilité de créer des QCM, exercices, vidéos,<br> téléchargement en PDF, suivi des statistiques des <br> ventes, gestion de codes promos, gestion de la facturation, etc</li>
-        <li class="logo-creez-6">Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits d’auteur</li>
-      </ul>
-      
-    </div>
-  </section>
-
-
-</body>
-
+    </section>
+  </body>
 </html>
