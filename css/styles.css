@@ -504,7 +504,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 71px;
- 
 }
 
 #les-avantages h3 {
@@ -551,12 +550,10 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 32px;
-  
 }
 
 .logo-avantage-1::before {
   background-image: url("../images/arrow-up-right.svg");
-
 }
 
 .logo-avantage-2::before {
@@ -597,10 +594,67 @@ main {
   gap: 71px;
 }
 
+#creez-formation h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: -1.5%;
+  text-transform: uppercase;
+  color: #152237;
+  margin-bottom: 43px;
+}
+
 #container-creez-formation img {
   width: 729px;
   height: 487px;
+}
 
+#creez-formation li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.5%;
+  margin-bottom: 24px;
+  padding-left: 65px;
+  list-style-type: none;
+  margin-bottom: 24px;
+  padding-left: 50px;
+  position: relative;
+}
+
+#creez-formation li::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-creez-1::before {
+  background-image: url("../images/coin-hand.svg");
+}
+
+.logo-creez-2::before {
+  background-image: url("../images/heart.svg");
+}
+
+.logo-creez-3::before {
+  background-image: url("../images/stylo.svg");
+}
+.logo-creez-4::before {
+  background-image: url("../images/settings.svg");
+}
+.logo-creez-5::before {
+  background-image: url("../images/professeur.svg");
 }
 
 /* A PROPOS */
